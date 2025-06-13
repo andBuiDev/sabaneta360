@@ -1,0 +1,72 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block titulo %}Acerca de{% endblock %}
+
+{% block contenido %}
+
+<section class="container my-5">
+    <h2 class="mb-4 text-center text-dark">¿Qué es Talento Tech?</h2>
+    <p class="text-justify fs-5 lh-lg text-secondary">
+        Talento Tech es un programa impulsado por el Ministerio de Tecnologías de la Información y las Comunicaciones
+        (MinTIC) de Colombia, diseñado para capacitar a ciudadanos en habilidades digitales avanzadas mediante una
+        metodología intensiva tipo bootcamp, con el objetivo de fortalecer su empleabilidad y fomentar el
+        emprendimiento en el sector tecnológico.
+    </p>
+    <p class="text-justify fs-5 lh-lg text-secondary">
+        Ofrece formación en áreas clave como programación web full stack, inteligencia artificial, blockchain, análisis de datos,
+        arquitectura en la nube y ciberseguridad. Su duración aproximada es de 159 horas distribuidas en dos meses, en modalidades
+        virtual y presencial, dependiendo de la región.
+    </p>
+    <p class="text-justify fs-5 lh-lg text-secondary">
+        En Antioquia, el programa capacitará a más de 14,000 personas entre 2024 y 2026 a través de la Unión Temporal IU Training,
+        conformada por la Universidad de Antioquia, la Universidad de Caldas y Ubicua. Esta iniciativa busca cerrar la brecha de
+        talento en el sector TI, facilitando oportunidades laborales y contribuyendo al desarrollo digital del país.
+    </p>
+    <div class="text-center my-4">
+        <a href="https://talentotech2.com.co/" target="_blank">
+            <img src="{% static 'media/img/talentotech.png' %}" class="img-fluid mt-3 rounded shadow" alt="Educación tecnológica">
+        </a>
+    </div>
+</section>
+
+<section class="container my-5">
+    <h2 class="mb-4 text-center text-primary">Shorts de YouTube</h2>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <iframe class="card-img-top rounded-top" height="200" src="https://www.youtube.com/embed/1f3IenArt6s" allowfullscreen></iframe>
+                <div class="card-body">
+                    <p class="card-text text-center">¿Sabes qué cursos hay en Talento Tech?</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <iframe class="card-img-top rounded-top" height="200" src="https://www.youtube.com/embed/A0Y4u5biluQ" allowfullscreen></iframe>
+                <div class="card-body">
+                    <p class="card-text text-center">El corazón de Don José late sanamente gracias a 'SaludTIC'</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <iframe class="card-img-top rounded-top" height="200" src="https://www.youtube.com/embed/G1wnJ246_Y0" allowfullscreen></iframe>
+                <div class="card-body">
+                    <p class="card-text text-center">'Talento Tech' en acción: Automatización inteligente desde Soacha</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 border-0 shadow-sm">
+                <iframe class="card-img-top rounded-top" height="200" src="https://www.youtube.com/embed/8TEsfg_WiFc" allowfullscreen></iframe>
+                <div class="card-body">
+                    <p class="card-text text-center">Modista de La Guajira fortalece su negocio a través de las ventas en línea</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
